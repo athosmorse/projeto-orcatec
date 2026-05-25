@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- cabeçalho (ctrl + C em todas as telas)-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/azul_orcatech">
+
+        <Button
+            android:id="@+id/barBt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/black" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Projeto"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnOverflow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_more_vert_24"
+            android:tint="@color/black" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Campo NOME -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="NOME:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Projeto Exemplo"/>
+
+            </LinearLayout>
+
+            <!-- Campo DATA INÍCIO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="DATA INÍCIO:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvDataInicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"/>
+
+            </LinearLayout>
+
+            <!-- Campo DATA FIM -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="DATA FIM:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvDataFim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"/>
+
+            </LinearLayout>
+
+            <!-- Campo VALOR CONTRATO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="VALOR:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvValorContrato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$00.000,00"/>
+
+            </LinearLayout>
+
+            <!-- Campo SOMA DAS DESPESAS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="DESPESAS:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvSomaDespesas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$00.000,00"/>
+
+            </LinearLayout>
+
+            <!-- Campo LUCRO ATUAL -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="LUCRO ATUAL:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvLucroAtual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$00.000,00"/>
+
+            </LinearLayout>
+
+            <!-- Campo DESCRIÇÃO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="DESCRIÇÃO:"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvDescricao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descrição com informações detalhadas."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+<!-- Pra adicionar o botão menu, eu tive que criar uma nova pasta em /res, e definir ela como MENU -->
+<!-- outra coisa que eu tive que fazer é colocar dentro de drawable um vetor, New > Vector Assent > Clip Art > more_vert-->
