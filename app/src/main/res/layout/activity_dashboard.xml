@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- cabeçalho (ctrl + C em todas as telas)-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/azul_orcatech">
+
+        <Button
+            android:id="@+id/barBt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginStart="4dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Gráfico 1 placeholder -->
+
+            <ImageView
+                android:id="@+id/imgGrafico1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/graficobarra"
+                android:background="#E0E0E0"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Gráfico 2 placeholder -->
+
+            <ImageView
+                android:id="@+id/imgGrafico2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/graficopizza"
+                android:background="#E0E0E0"
+                android:scaleType="centerInside"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
